@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Cadastro
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div>
+      <div class="container">
+        <div class="card">
+      <div>
+        <form
+          onsubmit="event.preventDefault();onFormSubmit();"
+          autocomplete="off"
+        >
+          <div>
+            <h5 class="card-title">Formulário</h5>
+
+            <div class="form-group col-md-4">
+              <label>Nome*</label>
+              <input class="form-control" type="text" name="fullName" id="fullName" />
+              <label class="validation-error hide" id="fullNameValidationError"
+              >Este campo é de preenchimento obrigatório.
+              </label>
+            </div>
+
+            <div class="form-group col-md-4">
+              <label>Idade</label>
+              <input class="form-control" type="text" name="age" id="age" />
+            </div>
+
+            <div class="form-action-buttons">
+              <input type="submit" value="Salvar" />
+              <input type="reset" value="Cancelar" />
+            </div>
+
+            <td>
+              <table class="list" id="employeeList">
+                <thead>
+                  <tr>
+                    <th>Nome </th>
+                    <th onclick="sortTable(1)">Idade </th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </td>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

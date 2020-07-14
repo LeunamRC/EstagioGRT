@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Cadastro
+    </title>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <form
+          onsubmit="event.preventDefault();onFormSubmit();"
+          autocomplete="off"
+        >
+          <div>
+            <h5>Formulário</h5>
+
+            <div>
+              <label>Nome</label>
+              <input type="text" name="fullName" id="fullName" />
+              <label class="validation-error hide" id="fullNameValidationError">
+              </label>
+            </div>
+
+            <div>
+              <label>Idade</label>
+              <input type="text" name="age" id="age" />
+            </div>
+
+            <div>
+              <input type="submit" value="Salvar" />
+              <button type="reset" value="Reset">Cancelar</button>
+            </div>
+
+            <td>
+              <table id="employeeList">
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </td>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
